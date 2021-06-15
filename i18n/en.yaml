@@ -38,3 +38,5 @@ yourMessage:
   other: "Your Message"
 yourName:
   other: "Your Name"
+phoneNumber:
+  other: "Phone number"
