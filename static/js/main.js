@@ -22,9 +22,13 @@ $(document).ready(function () {
         if (scroll > 200) {
             //console.log('a');
             $(".navigation").addClass("animated");
+            $(".animated img#logoLight").attr("hidden", "true")
+            $(".animated img#logoDark").removeAttr("hidden")
         } else {
             //console.log('a');
             $(".navigation").removeClass("animated");
+            $("img#logoDark").attr("hidden", "true")
+            $("img#logoLight").removeAttr("hidden")
         }
     });
 
