@@ -1,6 +1,6 @@
 {{ if .Site.Params.contact.enable }}
     {{"<!-- Contact Section -->" | safeHTML}}
-    <section id="{{ i18n "contact" | urlize }}" class="section contact">
+    <section id="{{ i18n "contact" | urlize }}" class="section contact bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
@@ -10,7 +10,7 @@
                             <h2>{{ . }}</h2>
                             {{ end }}
                             {{ with .Site.Params.contact.subtitle }}
-                                <p>{{ . }}</p>
+                                <p>{{ . | safeHTML }}</p>
                             {{ end }}
                         </div>
                     </div>
@@ -31,6 +31,11 @@
                                 <textarea class="form-control" placeholder="{{ i18n `yourMessage` }}" rows="3" name="message"></textarea>
                             </div>
                             <button class="btn btn-send" type="submit">{{ i18n "sendMe" }}</button>
+                            {{ if .Site.Params.contact.privacy }}
+                            <small class="form-text text-muted">
+                                {{ .Site.Params.contact.privacy.text | safeHTML }}
+                            </small>
+                            {{ end }}
                         </form>
 
                         <div id="success">
