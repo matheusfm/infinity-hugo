@@ -383,7 +383,7 @@ a:active {
 }
 
 .navigation .navbar-toggler {
-  background: #fff;
+  background: transparent;
   outline: none;
   border-radius: 0;
   float: right;
@@ -391,6 +391,11 @@ a:active {
 
 .navigation .navbar-toggler i {
   font-size: 22px;
+  color: #F6E5C5;
+}
+
+.navigation.animated .navbar-toggler i {
+  color: #092839;
 }
 
 .navigation.animated {
