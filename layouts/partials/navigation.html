@@ -1,8 +1,11 @@
 <div class="container">
     <nav class="navbar navbar-fixed-top  navigation " id="top-nav">
         <a class="navbar-brand float-none float-lg-left" href="{{ .Site.BaseURL }}">
-            {{ with .Site.Params.navigation.logo }}
-            <img src="{{ . }}" alt="logo">
+            {{ with .Site.Params.navigation.logoLight }}
+            <img src="{{ . }}" alt="logoLight" id="logoLight">
+            {{ end }}
+            {{ with .Site.Params.navigation.logoDark }}
+            <img src="{{ . }}" alt="logoDark" id="logoDark" hidden>
             {{ end }}
         </a>
         <button class="navbar-toggler hidden-lg-up float-lg-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -33,6 +36,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ .Site.BaseURL }}#{{ i18n "contact" | urlize }}">
                             {{ with .Site.Params.navigation.contact }} {{ . }} {{ end }}
+                        </a>
+                    </li>
+                {{ end }}
+                {{ if .Site.Params.contact.whatsapp.enable }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ .Site.Params.contact.whatsapp.href }}" target="_blank">
+                            <i class="tf-ion-social-whatsapp-outline"></i>
                         </a>
                     </li>
                 {{ end }}
