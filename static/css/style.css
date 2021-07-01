@@ -105,7 +105,6 @@ a:active {
 }
 
 .heading p {
-  font-family: 'Cabin', serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: 300;
@@ -465,6 +464,10 @@ a:active {
 .about .about-slider img {
   width: 100%;
   height: auto;
+}
+
+.about p {
+  padding-bottom: 20px;
 }
 
 /*--
