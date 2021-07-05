@@ -293,7 +293,7 @@ a:active {
 }
 
 .hero-area h1 {
-  color: #fff;
+  color: #F6E5C5;
   font-size: 60px;
   text-transform: uppercase;
   font-weight: bold;
@@ -404,6 +404,14 @@ a:active {
 
 .navigation.animated .menu a {
   color: #092839;
+}
+
+.navigation .menu a {
+  color: #F6E5C5;
+}
+
+.navigation .menu a:hover {
+  color: #fff;
 }
 
 .menu li a {
