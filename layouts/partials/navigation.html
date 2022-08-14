@@ -1,3 +1,8 @@
+{{ if .Site.Params.contact.whatsapp.floatingButton }}
+<a href="{{ .Site.Params.contact.whatsapp.href }}" class="float" target="_blank">
+    <i class="fa tf-ion-social-whatsapp-outline whatsapp-button"></i>
+</a>
+{{ end }}
 <div class="container">
     <nav class="navbar navbar-fixed-top  navigation " id="top-nav">
         <a class="navbar-brand float-none float-lg-left" href="{{ .Site.BaseURL }}">
