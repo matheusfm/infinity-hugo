@@ -414,6 +414,10 @@ a:active {
   color: #fff;
 }
 
+.navigation.animated .menu a:hover {
+  color: #d0bc96;
+}
+
 .menu li a {
   color: #fff;
   font-size: 16px;
