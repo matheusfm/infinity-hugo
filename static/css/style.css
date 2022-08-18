@@ -611,6 +611,8 @@ footer p a:hover {
   text-decoration: none;
 }
 
+.float:hover,
+.float:focus,
 .float{
   position:fixed;
   width:60px;
@@ -631,5 +633,5 @@ footer p a:hover {
 }
 
 .float:hover{
-  color: #092839;
+  background-color: #20bd5a;
 }
