@@ -115,9 +115,9 @@ a:active {
 }
 
 .btn-home {
-  background-color: #092839;
+  background-color:#25d366;
+  color:#F6E5C5;
   border-radius: 0px;
-  color: #F6E5C5;
   font-size: 18px;
   padding: 10px 40px;
   margin-top: 30px;
@@ -125,9 +125,9 @@ a:active {
 
 .btn-home:hover,
 .btn-home:focus {
-  background-color: #fff;
-  color: #555;
-  border: 1px solid #fff;
+  background-color: #0aa142;
+  color: #F6E5C5;
+  border: 1px solid #0aa142;
 }
 
 /*Preloader*/
@@ -633,5 +633,5 @@ footer p a:hover {
 }
 
 .float:hover{
-  background-color: #20bd5a;
+  background-color: #0aa142;
 }

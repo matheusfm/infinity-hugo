@@ -15,9 +15,11 @@
                             {{ . }}
                         </p>
                         {{ end }}
+                        {{ $contactLink := printf "#%s" (i18n "contact" | urlize) }}
+                        {{ $link := default $contactLink .Site.Params.hero.btnLink }}
                         {{ with .Site.Params.hero.btnText }}
                         <div class="wow fadeInDown" data-wow-delay="0.7s" data-wow-duration=".7s">
-                            <a class="btn btn-home" href="#{{ i18n "contact" | urlize }}" role="button">
+                            <a class="btn btn-home" href="{{ $link }}" role="button">
                                 {{ . }}
                             </a>
                         </div>
